@@ -323,6 +323,9 @@ body .main_wrapper .first_section .second_column {
   background: #f4f8ec;
   border-radius: 12px;
   padding: 2.5vw 0 2.29167vw 1.71875vw;
+  background-image: url("../img/Group 23.png");
+  background-repeat: no-repeat;
+  background-size: 23.69792vw 15.10417vw;
 }
 
 body .main_wrapper .first_section .second_column :first-child {
