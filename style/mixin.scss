@@ -1,0 +1,181 @@
+@mixin OpenSans {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin Poppins_500 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin Poppins_600 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin ButtonReset {
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+@mixin GreyButton {
+  button {
+    @include ButtonReset;
+    display: flex;
+    padding: calculate(6) calculate(16);
+    @include Poppins_600;
+    font-size: calculate(15);
+    line-height: calculate(22);
+    color: #151515;
+    width: calculate(179);
+    height: calculate(48);
+    background: #f5f5f5;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      align-self: center;
+      height: calculate(10);
+      width: calculate(7);
+    }
+  }
+}
+
+@mixin GreenButton {
+  button {
+    @include ButtonReset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: calculate(12) calculate(16);
+    @include Poppins_600;
+    font-size: calculate(15);
+    color: #151515;
+    width: calculate(163);
+    background: transparent;
+    border: 1.5px solid #92c064;
+    border-radius: 12px;
+    background-image: url("../img/green_arrow_forward.png");
+    background-repeat: no-repeat;
+    background-size: calculate(7) calculate(9);
+    background-position: 92% center;
+  }
+}
+
+@mixin FirstColumn {
+  .first_column {
+    display: flex;
+    flex-direction: column;
+    gap: calculate(6);
+
+    :nth-child(1) {
+      margin-bottom: calculate(16);
+    }
+
+    :nth-child(6) {
+      margin-bottom: calculate(48);
+    }
+
+    p {
+      @include Poppins_600;
+      font-size: calculate(18);
+      line-height: calculate(27);
+      color: #151515;
+    }
+
+    a {
+      @include OpenSans;
+      font-size: calculate(16);
+      line-height: calculate(18);
+      color: #6a983c;
+      text-decoration: none;
+      margin-bottom: calculate(12);
+    }
+
+    @include GreyButton;
+  }
+}
+
+@mixin BuyNow {
+  .buy_now {
+    width: calculate(269);
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: calculate(28);
+
+    .product_picture {
+      width: calculate(207);
+      height: calculate(150);
+      background: #f9f9f9;
+      border-radius: calculate(12);
+      position: relative;
+      margin-bottom: calculate(16);
+
+      .discount {
+        padding: 0 calculate(8);
+        height: calculate(18);
+        background: #f4f8ec;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: calculate(12);
+        left: calculate(12);
+        @include Poppins_600;
+        font-size: calculate(15);
+        line-height: calculate(22);
+        color: #6a983c;
+      }
+    }
+    :nth-child(2) {
+      margin-bottom: calculate(4);
+      @include Poppins_500;
+      font-size: calculate(15);
+      line-height: calculate(22);
+    }
+    :nth-child(3) {
+      margin-bottom: calculate(21);
+      @include OpenSans;
+      font-size: calculate(12);
+      line-height: calculate(26);
+      color: #575757;
+    }
+
+    .buy_product {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        @include Poppins_600;
+        font-size: calculate(18);
+        line-height: calculate(27);
+      }
+      .discount_price {
+        :nth-child(2) {
+          @include Poppins_600;
+          font-size: calculate(12);
+          line-height: calculate(18);
+          color: #a9a9a9;
+          text-decoration: line-through;
+        }
+      }
+      button {
+        @include ButtonReset;
+        background: #6a983c;
+        border: 2px solid #46760a;
+        border-radius: 12px;
+        padding: calculate(6);
+        @include Poppins_600;
+        color: #ffffff;
+      }
+    }
+  }
+}
