@@ -245,6 +245,7 @@ body .main_wrapper .first_section .first_column {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.3125vw;
+  width: 13.95833vw;
 }
 
 body .main_wrapper .first_section .first_column :nth-child(1) {
@@ -386,7 +387,7 @@ body .main_wrapper .second_section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 1.61458vw 2.34375vw;
+  padding: 1.77083vw 2.34375vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -405,6 +406,7 @@ body .main_wrapper .second_section .first_column {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.3125vw;
+  width: 13.95833vw;
 }
 
 body .main_wrapper .second_section .first_column :nth-child(1) {
@@ -601,6 +603,7 @@ body .main_wrapper .third_section .first_column {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.3125vw;
+  width: 13.95833vw;
 }
 
 body .main_wrapper .third_section .first_column :nth-child(1) {
